@@ -2,9 +2,9 @@
 
 ## Splits utf8 encoded file into smaller files of fixed size
 
-Use case: Cut minified JS file into smaller files, so they can be analyzed within code editors
+Use case: Cut minified JS file into smaller files, so they can be analyzed within code editors.  
 That cannot be addressed reliably by Linux's [`split`](http://linux.die.net/man/1/split) as it
-doesn't respect UTF8 chars encoding.
+doesn't respect UTF8 encoding.
 
 ### Installation
 
