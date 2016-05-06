@@ -1,0 +1,22 @@
+#!/usr/bin/env node
+
+'use strict';
+
+Error.stackTraceLimit = Infinity;
+
+var args = require('yargs').usage('$0 <options> filename')
+	.option('pieceSize', {
+		alias: 's',
+		describe: 'Piece file size (default: 100k)'
+	})
+	.option('destPath', {
+		alias: 'd',
+		describe: 'Destination directory path (default: same as input file)'
+	})
+	.demand(1)
+	.help('help')
+	.argv;
+
+require('../index')(args._[0], {
+	pieceSize: args.pieceSize
+}).done();

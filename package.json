@@ -1,0 +1,36 @@
+{
+  "name": "split-utf8-file",
+  "version": "1.0.0",
+  "description": "Split utf8 encoded file into smaller files of fixed size",
+  "author": "Mariusz Nowak <medyk@medikoo.com> (http://www.medikoo.com/)",
+  "keywords": [
+    "split",
+    "utf8",
+    "chunk"
+  ],
+  "bin": {
+    "split-utf8-file": "./bin/split-utf8-file"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/medikoo/split-utf8-file.git"
+  },
+  "dependencies": {
+    "deferred": "^0.7.5",
+    "es5-ext": "^0.10.11",
+    "fs2": "^0.2.3",
+    "human-format": "0.6",
+    "yargs": "^4.7"
+  },
+  "devDependencies": {
+    "tad": "^0.2.4",
+    "xlint": "^0.2.2",
+    "xlint-jslint-medikoo": "^0.1.4"
+  },
+  "scripts": {
+    "lint": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --no-cache --no-stream",
+    "lint-console": "node node_modules/xlint/bin/xlint --linter=node_modules/xlint-jslint-medikoo/index.js --watch",
+    "test": "node ./node_modules/tad/bin/tad"
+  },
+  "license": "MIT"
+}
