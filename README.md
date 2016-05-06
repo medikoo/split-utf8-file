@@ -18,3 +18,7 @@ doesn't respect UTF8 encoding.
 
 - `pieceSize` - Size of file piece (default: 100k)
 - `destPath` - Destination directory path (default: same as of input file)
+
+### Tests [![Build Status](https://travis-ci.org/medikoo/split-utf8-file.png)](https://travis-ci.org/medikoo/split-utf8-file)
+
+	$ npm test
